@@ -6,6 +6,40 @@
         </title>
   
 		<style>
+.text{
+    font-size:100px;
+}
+    @keyframes example {
+    0%   {color: red; left:0px; top:0px;}
+    10%  {color: yellow;left:500px; top:0px;}
+    20%  {color: blue;left:0px; top:0px;}
+    30% {color: mediumspringgreen;left:500px; top:0px;}
+    40%   {color: plum;left:500px; top:0px;}
+    50%   {color: teal;left:0px; top:0px;}
+    60%  {color: wheat;left:500px; top:0px;}
+    70%   {color: tomato;left:0px; top:0px;}
+    80%  {color: purple;left:500px; top:0px;}
+    90%  {color: royalblue;left:0px; top:0px;}
+    100% {color: red;left:500px; top:0px;}
+}
+
+/* Element */
+div {
+ 
+    color: red;
+    animation-name: example;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    position:relative;
+}
+div2 {
+ 
+    color: red;
+    animation-name: example;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    position:relative;
+}
 
 			
           	
@@ -13,6 +47,7 @@
 		   
     </head>
     <body>
-    <p>Testing Page</p>
+        
+   <div class="text"><p>Test</p></div>
 </body>
 </html>
