@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>
-            About Me
+            UNR References
         </title>
          <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -23,11 +23,24 @@
 			font-size: 30px;
 			text-align:center;
           			}  
-          	.ok{
-          	    color: white;
+          	h3 {
+          		 color: white;
 			font-size: 40px;
+			text-align:center;
+          	}
+          	.ok{
+          	    color: blue;
+			font-size: 20px;
 		
           	}
+			.listcolors {
+				color: white;
+			font-size: 40px;
+			margin:auto;
+			margin-left:20px;
+			
+          	}
+     #iframe {position:absolute;left:0px;top:200px;}
           		/* Animation */
           	@keyframes example {
     0%   {color: red;}
@@ -51,15 +64,17 @@ div {
     animation-duration: 10s;
     animation-iteration-count: infinite;
 }
+			
+          	
      		 </style>
-     		     
 		   
     </head>
     <body>
+                                                            <!--   Navigation Bar -->
         <div class="w3-top">
   <div class="w3-bar w3-black w3-card">
-    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-     <a href="https://matthewhar.github.io/Mywebsite/MyPage.html" class="w3-bar-item w3-button w3-padding-large">Home</a>
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="SmallNav()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="https://matthewhar.github.io/Mywebsite/MyPage.html" class="w3-bar-item w3-button w3-padding-large">Home</a>
     <a href="https://matthewhar.github.io/Mywebsite/AboutMe.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">About Me</a>
     <a href="https://matthewhar.github.io/Mywebsite/UnrRef.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">UNR</a>
     <div class="w3-dropdown-hover w3-hide-small">
@@ -73,33 +88,48 @@ div {
     <a class="w3-padding-large w3-hide-small w3-right">Matthew Hargraves</a>
    </div>
   </div>
+  
+  
+                                                          <!--   Navigation Bar Compressed -->
+ <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="https://matthewhar.github.io/Mywebsite/CG2.html" class="w3-bar-item w3-button" class="w3-bar-item w3-button w3-padding-large">About Me</a>
+  <a href="https://matthewhar.github.io/Mywebsite/CG2.html" class="w3-bar-item w3-button" class="w3-bar-item w3-button w3-padding-large">Computer Science Principles</a>
+  <a href="https://matthewhar.github.io/Mywebsite/CG2.html" class="w3-bar-item w3-button" class="w3-bar-item w3-button w3-padding-large">Computer Graphics</a>
+</div>
+
+
         <h1>
-        <p><div>About Me</div></p>
+        <p><div>UNR Ref.</div></p>
         </h1>
-
-        <center> <img src="Me.jpg" width = "300px"> </center>
-        <hr>
-        <h1> <div>Info</div></h1>
-<ul class="ok">
-     <li>My name is Matthew Hargraves</li>
-     <li>I was born in Pleasonton, CA</li>
-     <li>I live with my Mother, Father, and Brother</li>
-     <li>My favorite things to do include 
-     <ul>
-         <li>Basketball</li>
-         <li>Soccer</li>
-         <li>Spending time with friends</li>
-         <li>Mountain biking</li>
-         </ul>
-</ul>
-<hr>
-<h1> <div>My Favorite Webpages</div></h1>
-<ul class="ok">
-     <li><a href = "https://www.youtube.com/" class="ok">Youtube</a></li>
-     <li><a href = "https://www.google.com/" class="ok">Google</a></li>
-     <li><a href = "http://turnyournameintoaface.com/" class="ok">Turn Your Name into a Face</a></li>
-</ul>
-<hr>
-
+       <hr>
+       
+       <ul>
+       <li><div>General</div></li>
+       <ul class="ok">
+       <li><a href="https://unr.canvaslms.com/">Canvas</a></li>
+       </ul>
+       <li><div>Math 181</div></li>
+       <ul class="ok">
+       <li><a href="https://www.webassign.net/wa-auth/login">WebAssign</a></li>
+       </ul>
+       <li><div>CS 135</div></li>
+       <ul class="ok">
+       <li><a href="https://app.tophat.com/login">TopHat</a></li>
+       </ul>
+       </ul>
+       <hr>
+    
+<script>
+                                                        // Navgation on small screens Function
+function SmallNav() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+       
 </body>
 </html>
